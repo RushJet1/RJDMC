@@ -61,7 +61,7 @@ Public Class MainForm
 
     'Help->About messagebox
     Private Sub AboutToolStripMenuItem_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles AboutToolStripMenuItem.Click
-        MessageBox.Show("RJDMC" & vbNewLine & "v1.53 by Tadd Nuznov (RushJet1)" & vbNewLine & "Mar 5, 2023")
+        MessageBox.Show("RJDMC" & vbNewLine & "v1.55 by Tadd Nuznov (RushJet1)" & vbNewLine & "Apr 9, 2025")
     End Sub
 
     'This allows drag 'n drop of files.
