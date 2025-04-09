@@ -1,0 +1,60 @@
+data/.hgignore.i
+data/DMC_Editor.sln.i
+data/DMC_Editor.suo.i
+data/DMC_Editor.xaddin.i
+data/DMC_Editor/AboutBoxNotify.Designer.vb.i
+data/DMC_Editor/AboutBoxNotify.resx.i
+data/DMC_Editor/AboutBoxNotify.vb.i
+data/DMC_Editor/AboutWrapper.vb.i
+data/DMC_Editor/AudPlayer.vb.i
+data/DMC_Editor/Batch.Designer.vb.i
+data/DMC_Editor/Batch.resx.i
+data/DMC_Editor/Batch.vb.i
+data/DMC_Editor/Command.vb.i
+data/DMC_Editor/DMC.vb.i
+data/DMC_Editor/DMC_Editor.sln.i
+data/DMC_Editor/DMC_Editor.suo.i
+data/DMC_Editor/DMC_Editor.xaddin.i
+data/DMC_Editor/DMC_Esrc.zip.i
+data/DMC_Editor/Data.vb.i
+data/DMC_Editor/F_AudioPreview.vb.i
+data/DMC_Editor/F_Open.vb.i
+data/DMC_Editor/F_Save.vb.i
+data/DMC_Editor/F_TrackBars.vb.i
+data/DMC_Editor/F_Visualization.vb.i
+data/DMC_Editor/Fade.Designer.vb.i
+data/DMC_Editor/Fade.resx.i
+data/DMC_Editor/Fade.vb.i
+data/DMC_Editor/Format.vb.i
+data/DMC_Editor/Header.vb.i
+data/DMC_Editor/MainForm.Designer.vb.i
+data/DMC_Editor/MainForm.resx.i
+data/DMC_Editor/MainForm.vb.i
+data/DMC_Editor/My Project/Application.Designer.vb.i
+data/DMC_Editor/My Project/Application.myapp.i
+data/DMC_Editor/My Project/AssemblyInfo.vb.i
+data/DMC_Editor/My Project/Resources.Designer.vb.i
+data/DMC_Editor/My Project/Resources.resx.i
+data/DMC_Editor/My Project/Settings.Designer.vb.i
+data/DMC_Editor/My Project/Settings.settings.i
+data/DMC_Editor/RJDMC.vbproj.i
+data/DMC_Editor/RJDMC.vbproj.user.i
+data/DMC_Editor/VisualStudio.postbuild.i
+data/DMC_Editor/VolBox.Designer.vb.i
+data/DMC_Editor/VolBox.resx.i
+data/DMC_Editor/VolBox.vb.i
+data/DMC_Editor/WAV.vb.i
+data/DMC_Editor/WAVHeader.vb.i
+data/DMC_Editor/bin/Release/RJDMC.pdb.i
+data/DMC_Editor/bin/Release/RJDMC.vshost.exe.manifest.i
+data/DMC_Editor/obj/Release/RJDMC.AboutBoxNotify.resources.i
+data/DMC_Editor/obj/Release/RJDMC.Batch.resources.i
+data/DMC_Editor/obj/Release/RJDMC.Fade.resources.i
+data/DMC_Editor/obj/Release/RJDMC.MainForm.resources.i
+data/DMC_Editor/obj/Release/RJDMC.Resources.resources.i
+data/DMC_Editor/obj/Release/RJDMC.VolBox.resources.i
+data/DMC_Editor/obj/Release/RJDMC.pdb.i
+data/DMC_Editor/obj/Release/RJDMC.vbproj.FileListAbsolute.txt.i
+data/DMC_Editor/obj/Release/RJDMC.vbproj.GenerateResource.Cache.i
+data/DMC_Editor/obj/Release/TempPE/My Project.Resources.Designer.vb.dll.i
+data/VisualStudio.postbuild.i
