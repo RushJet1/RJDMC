@@ -1,0 +1,169 @@
+1.55 public
+-first play of a file will no longer cut off the beginning of the sample sometimes
+-fixed several issues related to chaning Pitch settings
+  -program won't crash when you change pitch then tilt
+  -viewing window will not change when changing pitch
+  -prevented wav file from being repitched whenever a tilt happens (stopped by previous crash)
+-labels do not overlap counters in wine anymore
+
+1.53 public
+
+-opening .dmc and .wav files directly will properly show the program on top of other windows and in focus
+-caps in the file extension while opening files "with" RJDMC will no longer say they are not supported
+-changed UI label on "save split dmc" button
+-Split DMC saving now shows how many frames the split DMC will run for and will calculate the size automatically based on frames and hz rate
+
+1.52 public
+
+-you can open .wav files directly by associating them to RJDMC in windows now
+-fixed "open with" threading issue crash (only on opening files by associating them to RJDMC)
+
+1.51 public
+
+-fixed ssrc "<smaller of two rates>/gcd(rate,33144) %2 %3 = 0" bug
+-removed hacky old fix for the above
+-edited the way files are saved
+-removed admin UAC requirement
+-drag and drop works more consistently
+
+1.4 public
+
+- You can now associate DMC files with RJDMC for double-clicking
+- Fixed issues with window order when double clicking files
+- Added new program icon
+- Added .dmc file icon
+- Got rid of adding proper 16+1 byte lengths at end of files
+- RJDMC no longer crashes if you open a file that's already open somewhere else.
+- RJDMC tells you when you have a text output that's too large for Famitracker to import.
+- Writing a .txt file for FT to import will now overwrite existing files with the same name.
+
+1.3 public
+
+- Added the ability to save larger DPCMs as famitracker-importable text files.
+
+1.2 public
+
+- "Tilt" values can be negative now.
+- All non-text areas become active when moused over.
+- Saving .dmc and .wav files correctly shows the current filename.
+- SSRC is now included in the RJDMC executable, so no need to have it in its own folder.
+
+1.1 public
+
+- .wav opening fixes
+
+1.041 private
+
+- Fixed cut/copy/paste/trim/delete so that they no longer crash if the file is too small (one sample)
+
+
+1.04 public
+
+- Added tilt feature
+- Fixed a bug where hitting revert crashes program before a .wav is loaded
+- Fixed several bugs with tilt
+
+
+v1.03 public
+
+- Minimizing the window when a .wav file is open no longer crashes RJDMC
+
+
+v1.02 public
+
+-Reiterates current working directory for Windows XP (ssrc use)
+-Changes current working directory to the correct one if an outside program opens it
+
+
+v1.01 public
+
+- Fixed some specific graphical glitches with resizing
+- Editing the zoomed-in portions of the wav shouldn't screw up as long as the wave's zoom isn't already messed up :P
+
+v1.0 public
+
+- Fixed a bug with selections not actually being the correct size that is selected (mostly unnoticeable)
+- Fixed Wave hz rates being incorrectly converted by ssrc
+- Fixed a glitch where ssrc would sometimes process waves in 8-bit mode (used double precision)
+
+
+v0.9 public
+
+-Zoom into any area is done
+-Operations on zoomed selections are possible
+-Modify volume for selection
+-Fade volume to x%
+-Fixed several bugs, made tons of optimizations (mostly to new functions)
+-Zooming on large files is faster
+
+v0.6 Public
+
+-Added a reverse function
+-Data is read in almost 2x as fast
+-Quality of "rate" changes is much higher
+-Added extra error handling for non-pcm and non-wav files
+-Fixed several bugs
+-Added "play selection" feature
+-DPCM output is always (mod16 + 1) bytes, so looping is more accurate
+-Fixed a few of the keypresses not being read properly
+-Various improvements to code efficiency
+-Fixed all bugs with the trackbars (all scroll 1-per-tick)
+
+
+v0.4 Public
+
+-Pitch is implemented
+-Deleting selection is implemented
+-Fixed several bugs related to the highlighting of the window
+-Fixed bugs involving space bar triggering controls
+-Fixed bugs with lower HZ samples crashing SSRC (small files)
+-Implemented Cut, Copy, Paste, Trim, Select All, Delete
+
+NOTES: 
+-Zoom function doesn't work with editing the wave file yet (it acts as if you're zoomed all the way out).
+-You can either right click on the wave display or use shortcuts to use the editor functionality.
+	-CTRL+V = paste, CTRL+C = copy, CTRL+X = cut, CTRL+T = trim, CTRL+Z = revert, CTRL+A = select all
+-"quality" Pitch change right now is a bit mediocre quality-wise.  I might just have lots of copies of each .wav file in memory for small files.
+
+
+v0.32 Public 
+
+-Any rate of input wave is supported (approximated to the nearest frequency SSRC can handle)
+-DMC drag 'n drop implemented
+-DMC batch processing implemented
+
+v0.31 Public
+
+-Very small .wav files work properly with SSRC now.
+-When SSRC is missing, an error is generated and the program properly halts.
+
+v0.3 Public
+
+-Memory use is cut way down (for large files)
+-Bit Crushing is implemented (0 is off, 1-19 is varying degrees of bits flipped, and 20 is an inverted waveform).
+-Volume control is implemented (volume for the input wave is changed by x%).
+-Zoom is implemented on the waveform view--unfortunately it only zooms to the middle now.
+-You can highlight parts of the wave in the waveform view but it doesn't do anything.
+-Pitch control is done, and playback is at least pretty close to how the NES would handle it, though not exact.
+-Opening DMC files is possible now, and you can edit them just like .wav files.
+-Several bugs were fixed, most of which most people wouldn't notice.
+
+
+v0.2 (private)
+-Started several of the features that are finished in v0.3.
+-Preview ability is threaded
+-Toolbar buttons are functional
+
+
+v0.1 Public
+-New GUI
+-Added waveform view of DPCM
+-Added preview ability (currently does not stop on file open)
+-Added some toolbar buttons, only a couple do anything.
+
+
+DMC_EDITOR (RJDMCv0.05)
+
+-Converts .wav files to .dmc
+-Displays information about incoming .wav
+-.wav files must be greater than 33144hz, and they are resampled poorly.
